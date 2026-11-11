@@ -1,0 +1,16 @@
+请帮我安装并运行 SkillBridge：
+https://github.com/brin666/skillbridge-gui
+
+先检查当前系统、终端权限和已有安装。首版已验证的环境是 Windows + PowerShell + Codex；如果我的系统不是 Windows，请先告诉我现有启动脚本是否适用，不要擅自改写脚本。读取项目的 README.md、SKILL.md 和 docs/codex-local.md，按实际文档下载完整项目（git clone 或 GitHub 压缩包均可）。电脑上已有 SkillBridge 时，复用原有目录和档案，不要重复下载或另建档案。
+
+确认 Python 3.11+、Node.js/npm 和 Codex CLI 可用；在项目根目录用 npm --prefix ui ci 安装界面依赖。缺少的软件请先告诉我，经我同意再安装。
+
+整理当前支持且可读取的 Agent 资料。目前自动整理只覆盖本机 Codex：Skills、记忆、规则和 MCP 配置。即使你本身不是 Codex，也只整理本机 Codex 的资料，并说明你自己的资料尚未支持自动整理。展示来源、用途和实际发现的问题；读取失败、尚未支持和登记失败的部分请分别说明。
+
+源配置和记忆保持原样，不执行发现的 Skill，不启动或测试 MCP，不上传本机资料，也不自动生成或发送交接包。
+
+使用项目已有的 workspace 后端和 GUI：运行 scripts/start-codex.ps1，并用 -DataDir 指定一个本机可写的绝对路径作为档案目录（脚本默认是 D:/SkillBridgeData/codex-local）；首次整理加 -Refresh，需要预查时可先运行 python scripts/codex_inventory.py --data-dir "<同一个档案目录的绝对路径>" --dry-run。默认端口是后端 17322、界面 5174；脚本会检查端口并复用匹配的服务。端口被其他程序占用时，换用 -ApiPort / -GuiPort，不要终止其他进程。
+
+完成后在浏览器打开脚本输出的地址，并告诉我实际访问地址、档案目录，以及档案中 codex-inventory.json 记录的各类数量和失败项。MCP 配置被登记不代表连接成功。
+
+如果你无法访问我的本机环境，请明确说明，并给我本机执行步骤。不要用示例数据代替实际结果。
