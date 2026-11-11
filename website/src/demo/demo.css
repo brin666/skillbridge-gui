@@ -58,6 +58,9 @@ h1,h2,h3,p{margin:0}
 .search{width:210px;transition:width var(--d-soft) var(--e-soft)}
 .search:focus-within{width:290px}
 .search .astryx-text-input,.search [data-astryx-text-input]{border-radius:999px!important}
+/* Focus the whole search capsule, including the icon and padding. */
+.search .astryx-text-input:focus-within{outline:2px solid var(--accent);outline-offset:3px}
+.search input:focus{outline:none}
 
 /* 来源分段控件 */
 .seg{position:relative;display:flex;padding:3px;border-radius:999px;background:var(--fill-2)}
