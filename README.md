@@ -1,5 +1,7 @@
 # SkillBridge
 
+[产品官网与交互演示](https://brin666.github.io/skillbridge-gui/) · [复制启动指令说明](website/LAUNCH_PROMPT.md)
+
 > Discover, understand, manage, and sync all your AI Skills.
 
 SkillBridge is a local-first AI Skills visual management tool launched from an Agent Skill. It discovers AI agents on your computer, scans their installed Skills, and presents a dashboard.

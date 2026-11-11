@@ -4,7 +4,11 @@
 
 现有 `ui/`、`backend/`、`scripts/` 都没有改动。
 
-> 当前状态：**尚未部署**。下面写的 Pages 地址是“部署成功后预计的地址”，现在打开会是 404。
+> 当前状态：**已上线**（2026-11-11，北京时间）。官网：<https://brin666.github.io/skillbridge-gui/>。
+
+首次发布提交：`e12920f8fdbba2e0f203c45a792364c14c743058`。[GitHub Actions 构建与部署均成功](https://github.com/brin666/skillbridge-gui/actions/runs/42979691452)。Pages 的 Source 为 GitHub Actions，HTTPS 已启用，仓库 About 的 Website 已设置为官网地址。
+
+发布后验证：未登录访问首页、JS、CSS、favicon 均返回 200；实际浏览器复制启动指令成功，Windows 剪贴板与源文件全文一致（换行符归一化）；五类示例可加入同一交接包，空白侧栏可展开，预览标有示例数据，原名搜索正常。390px 模拟窄屏无横向溢出，已查看桌面及窄屏截图；页面未请求 localhost。本机证据保存在被忽略的 `ui/.qa/website-live-*`，不随官网发布。
 
 ## 1. 本地预览（Windows）
 
@@ -33,7 +37,9 @@ npm.cmd run preview    # 打开 http://127.0.0.1:17351/skillbridge-gui/
 
 构建产物只包含 `index.html`、`favicon.svg` 和 `assets/` 下的一个 JS 和一个 CSS 文件，不含 `ui/`、`backend/`、本机档案、测试截图或任何真实资料。
 
-## 3. GitHub Pages 设置步骤（需要你确认后再做）
+## 3. GitHub Pages 设置与后续发布
+
+以下首次发布设置已经完成。之后将官网改动推送到同一仓库的 `main` 即会自动更新；不需要重新启用 Pages。
 
 工作流文件是 `.github/workflows/pages.yml`。它只在 `website/` 里运行 `npm ci` 和 `npm run build`，只上传 `website/dist`（`actions/upload-pages-artifact` + `actions/deploy-pages`）。触发条件是：推送到 `main` 且改动了 `website/**` 或工作流文件本身，或者在 Actions 页面手动运行（`workflow_dispatch`）。构建时用仓库名作子路径，所以在 `skillbridge-gui` 仓库里就是 `/skillbridge-gui/`。
 
@@ -42,7 +48,9 @@ npm.cmd run preview    # 打开 http://127.0.0.1:17351/skillbridge-gui/
 3. 到 **Actions → Deploy website to GitHub Pages**，点 **Run workflow**（第 1 步的推送本身也会触发一次）。
 4. 运行成功后，预计地址是 `https://brin666.github.io/skillbridge-gui/`。确认能打开以后，再把它填到仓库的 About → Website，或写进 README。
 
-## 4. 仓库可见性核查（2026-11-11 约 02:00，美东时间）
+## 4. 首次发布前的历史核查（2026-11-11）
+
+下表保留制作官网时的记录；当前部署状态以上文发布后验证为准。
 
 | 项目 | 结果 |
 |---|---|
@@ -53,16 +61,16 @@ npm.cmd run preview    # 打开 http://127.0.0.1:17351/skillbridge-gui/
 | `website/`、`pages.yml` | 不在远端，只在这次交付里 |
 | `brin666/skillbridge`（旧仓库） | 也是公开的，最后推送于 2026-10-13，没有 workspace GUI、`docs/`、`scripts/` |
 
-## 5. 公开分发和 Pages 还差什么
+## 5. 后续维护与现有边界
 
-1. **官网代码没推送**：`website/` 和 `.github/workflows/pages.yml` 还不在任何远端仓库里。
-2. **Pages 没开**：要在 Settings → Pages 把 Source 改成 GitHub Actions。
-3. **本机 git 远端指向旧仓库**：据了解，`D:\skillbridge` 的 `origin` 是 `https://github.com/brin666/skillbridge.git`，而官网和启动指令用的是 `skillbridge-gui`。推送前要确认推到哪个仓库，比如加一个指向 `skillbridge-gui` 的远端。这一点我没能直接核对，因为快照里没有 `.git`。
+1. **官网源码已上传**：`website/` 和 `.github/workflows/pages.yml` 位于 `brin666/skillbridge-gui` 的 `main`；只发布 `website/dist`。
+2. **Pages 已启用**：Source 为 GitHub Actions；流程包含启动指令一致性检查、构建及发布。
+3. **本机两个工作目录**：`D:\skillbridge` 的 `origin` 仍指向旧仓库，本轮保留所有未提交修改。发布副本在 `D:\SkillBridgeData\publish\skillbridge-gui-20261111-144807`，其 `origin` 指向 `skillbridge-gui`。后续先核对远端及最新提交，再仅同步待发布的官网文件到发布副本，提交并推送；不要将其他会话文件批量加入。
 4. **只支持 Windows**：启动脚本依赖 PowerShell 和 `Get-NetTCPConnection`，默认档案目录在 D 盘。macOS、Linux 用户目前没有可用的一键入口，指令里已经要求 Agent 先说明情况。
 5. **没有发布版本**：仓库没有 tag 或 release，访客拿到的是 `main` 的最新代码。建议给能用的版本打 tag，并在 README 里写清楚。
 6. **公开文档里有个人路径**：`docs/codex-local.md`、`docs/current-state.md`、`docs/frequent-skills-proposal.md`、`previews/library-readability/README.md` 写了 `C:/Users/BL/...`、`D:/CodexData/...` 这类本机路径；`resources/catalog.zh-CN.json` 列出了本机装过的 Skill 名称。这些不是凭据，我也没有扫到 token 或私钥格式的字符串，但它们已经公开了，要不要处理由你决定。官网本身不包含这些内容。
 7. **仓库安全设置**：Secret scanning 和 push protection 都是关闭状态，建议在公开分发前打开。
-8. **依赖源**：`package-lock.json` 的下载地址是 npmmirror，GitHub Actions 也会从 npmmirror 下载。在本机环境中，干净安装和构建都已跑通，但 GitHub 机房访问 npmmirror 的速度没验证过。如果 CI 太慢或失败，可以用 npmjs 源重新生成锁文件。
+8. **依赖源**：`package-lock.json` 的下载地址是 npmmirror，本机干净安装与首次 GitHub Actions 安装、构建均已通过。
 
 ## 6. 已核对的内容
 
@@ -78,6 +86,6 @@ npm.cmd run preview    # 打开 http://127.0.0.1:17351/skillbridge-gui/
 
 ## 7. 没有验证的部分
 
-- 没有在 GitHub 上真正运行过这个工作流，也没有真正部署过 Pages。
-- 没在你的 Windows 电脑、Chrome 和中文字体下看过实际效果，也没在真机触屏、Safari 或 Firefox 上测过剪贴板。
+- 首次实际 GitHub Actions 和 Pages 部署已完成，见文首链接。
+- 已在本机 Windows 的 Ego Lite 浏览器检查线上页面、中文显示及剪贴板；尚未测试真机触屏、Safari 或 Firefox。
 - 没有让任何 Agent 在一台全新的 Windows 电脑上把启动指令完整执行一遍。
