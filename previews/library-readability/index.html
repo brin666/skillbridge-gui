@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SkillBridge · 资料卡片预览</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <div class="preview-bar"><span>局部预览 <span class="quiet">· 试选不写入交接包</span></span><div class="compare" aria-label="文案对比"><button data-mode="before">当前文案</button><button data-mode="after" aria-pressed="true">新版文案</button></div><a href="http://127.0.0.1:5174/">当前界面 ↗</a></div>
+  <nav class="rail" aria-label="资料分类"><div class="brand">A</div><div id="tabs" role="tablist"></div><span class="rail-foot">Codex</span></nav>
+  <main><header><h1><span id="heading">Skills</span><span id="count">…</span></h1><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索名称或用途" aria-label="搜索资料" autocomplete="off"></label></header><div id="error" hidden role="alert"></div><div id="grid" role="list" aria-label="资料列表"></div><p id="empty" hidden>没有找到匹配的资料</p></main>
+  <aside class="dock" aria-label="交接包预览"><button id="open-selection" aria-label="查看试选清单"></button><span id="selected-count">0</span><div id="selected-icons"></div><button id="selection-bottom" aria-label="查看试选清单">↗</button></aside>
+  <dialog id="detail"><button id="close-detail" class="close" aria-label="关闭详情">×</button><div id="detail-body"></div></dialog>
+  <div id="notice" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body></html>

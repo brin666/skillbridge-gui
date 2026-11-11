@@ -1,0 +1,919 @@
+{
+  "action-director": {
+    "titleZh": "动作导演",
+    "summaryZh": "把打斗创意拆成动作节奏、镜头和带时间点的视频提示词。",
+    "sourceHashes": [
+      "2ae97e9bb2157d2a9861ee59b78553e7950f15e48d932d6c43995354ca133fa3"
+    ]
+  },
+  "after-effects": {
+    "titleZh": "AE 动效与工程助手",
+    "summaryZh": "编写表达式、制作模板，处理导出设置、卡顿和素材整理。",
+    "sourceHashes": [
+      "a52bd502b05331962d20d51440cf99b0106d0dba5266e490404e77c9cf6619ca"
+    ]
+  },
+  "airtable": {
+    "titleZh": "Airtable 数据管理",
+    "summaryZh": "通过 API 新增、查询、筛选和更新 Airtable 记录。",
+    "sourceHashes": [
+      "044d3a6743674bed6ab8d94452286f10ba16ef811511abe44ea58029dcb5a4a2"
+    ]
+  },
+  "anatomy": {
+    "titleZh": "交互式原理图解",
+    "summaryZh": "用可操作的等距 SVG 插图，讲清器械、系统和技术原理。",
+    "sourceHashes": [
+      "e3d35945c6c26a96a4c91c90e654f2d6012243532912c832707d2a3c7c32b804"
+    ]
+  },
+  "animate": {
+    "titleZh": "界面动效制作",
+    "summaryZh": "设计并实现界面动画，处理节奏、过渡、中断和退出状态。",
+    "sourceHashes": [
+      "94052a4fffc1283cc6acc75dd4e0e93c00171b1e779fcea835ad718ce36d6b2b"
+    ]
+  },
+  "anti-ui-slop": {
+    "titleZh": "界面设计与精修",
+    "summaryZh": "参考真实产品界面，建立视觉规则并检查页面的完成质量。",
+    "sourceHashes": [
+      "bf0b6aaef2cb39e2918640a865617125e0c767d95d22b5caf118e6631a56e5c4"
+    ]
+  },
+  "apple-notes": {
+    "titleZh": "Apple 备忘录",
+    "summaryZh": "通过命令行创建、搜索和编辑 Apple 备忘录。",
+    "sourceHashes": [
+      "38acb6e20986cafd34106cdd5ca39313eeab421d885eac53cdc86b8b480f7b19"
+    ]
+  },
+  "apple-reminders": {
+    "titleZh": "Apple 提醒事项",
+    "summaryZh": "查看、新建和完成 Apple 提醒事项。",
+    "sourceHashes": [
+      "141a55b8031569f148e7a058a97c7db1ae61c0879797455a9c1e5bfdb70df5a7"
+    ]
+  },
+  "article-sticker": {
+    "titleZh": "文章配图贴纸",
+    "summaryZh": "从文章提炼视觉元素，制作风格统一的透明 PNG 贴纸。",
+    "sourceHashes": [
+      "bbb9d6c7c3b0e13b29964ba7ac1a03a3030ad7c182454bf6e79b658b676e0cfc"
+    ]
+  },
+  "blogwatcher": {
+    "titleZh": "博客更新追踪",
+    "summaryZh": "跟踪博客和 RSS、Atom 订阅源的更新。",
+    "sourceHashes": [
+      "cf5840c2ae7431feccfdb551fde7b1b9ab6af87ca5eff35954cbffc98bb49da1"
+    ]
+  },
+  "brand-music-workflow": {
+    "titleZh": "商户品牌音乐流程",
+    "summaryZh": "整理探店、商户筛选、音乐创作提示词和试听反馈。",
+    "sourceHashes": [
+      "f9a58a06c726b4f5da99d61c100241d64b6baf46645c6f3611eb0e31b4929db4"
+    ]
+  },
+  "character-sheet": {
+    "titleZh": "角色设定与三视图",
+    "summaryZh": "把角色描述整理成正侧背视图、配色、面部和服饰细节。",
+    "sourceHashes": [
+      "072c81182c0f86dc2e532b2cde8ba526abcc554940e4af89a0e219621676908f"
+    ]
+  },
+  "chatcut:asset-import": {
+    "titleZh": "ChatCut 素材导入",
+    "summaryZh": "通过 ChatCut 插件把本地、附件或下载的媒体导入项目。",
+    "sourceHashes": [
+      "de63dc9319cfd0ac996ed6c1c541e782c86e1aeed8629b4f0efed30e21b0ce3c"
+    ]
+  },
+  "chatcut:chatcut-plugin-basics": {
+    "titleZh": "ChatCut 剪辑入口",
+    "summaryZh": "通过 ChatCut 插件组织素材、剪辑、字幕和导出工作。",
+    "sourceHashes": [
+      "f8b415d2e51efd781bbca450ba951774778b77906a84bfd1ca0a7903310bee3e"
+    ]
+  },
+  "chatcut:create-motion-graphics": {
+    "titleZh": "ChatCut 图形动画",
+    "summaryZh": "在 ChatCut Desktop 项目中编写和放置可编辑的 JSX 图形动画。",
+    "sourceHashes": [
+      "6e948a9a14009324f9db2a2770af2f99132635e71e429f148c3f5fa093db459c"
+    ]
+  },
+  "chatcut:digital-human": {
+    "titleZh": "数字人口播",
+    "summaryZh": "从脚本、音频或人物照片创建 AI 主播和数字人视频。",
+    "sourceHashes": [
+      "78dca9f2c4e86a0a2abfc984c6af0d983f4ca0e6845f74f7c114e4ac43938b1a"
+    ]
+  },
+  "chatcut:export": {
+    "titleZh": "ChatCut 项目导出",
+    "summaryZh": "导出视频、音频、字幕或 XML，并检查渲染状态。",
+    "sourceHashes": [
+      "a7435072d5b543e6e9926c655c23afa8dc21cacfd7e8cdcfbbb6b52d4a2df567"
+    ]
+  },
+  "chatcut:known-errors": {
+    "titleZh": "ChatCut 故障排查",
+    "summaryZh": "诊断插件调用、素材导入、生成和渲染中的错误。",
+    "sourceHashes": [
+      "ff354e88c1530a41a9c20ff11e9cc573533e46bcb70f573d991435cd02b23be7"
+    ]
+  },
+  "chatcut:multicam-sync": {
+    "titleZh": "多机位素材同步",
+    "summaryZh": "对齐多台相机和录音设备的素材，辅助切换发言者镜头。",
+    "sourceHashes": [
+      "28f3c5d1b97455c517e57e83b0903f9e21154fa702ad5377573852a3d7d503d2"
+    ]
+  },
+  "chatcut:music": {
+    "titleZh": "视频背景音乐",
+    "summaryZh": "为 ChatCut 视频生成配乐、片头音乐和背景音乐。",
+    "sourceHashes": [
+      "0f497f44238f74b8b7bc817b997cfd468372046d4303bae26ba81fa39ed2363d"
+    ]
+  },
+  "chatcut:product-help": {
+    "titleZh": "ChatCut 使用帮助",
+    "summaryZh": "查阅官方资料，回答功能、版本、安装和计费问题。",
+    "sourceHashes": [
+      "6c53816ffa65918ee8e81238d70d350a262f99ff24c528a21b02519bb2210678"
+    ]
+  },
+  "chatcut:shader-gen": {
+    "titleZh": "视频特效与调色",
+    "summaryZh": "制作 WebGL 视频滤镜、转场、蒙版和调色效果。",
+    "sourceHashes": [
+      "9d7dc79f1b4e825d796b55114f60904b0f66d463d28f649bcc63947003017b7f"
+    ]
+  },
+  "chatcut:talking-head-guide": {
+    "titleZh": "口播与访谈剪辑",
+    "summaryZh": "围绕说话节奏整理口播、访谈、字幕、配画面和图形动画。",
+    "sourceHashes": [
+      "e9380c7058537212534187b61ee90f885cd08df8c9446683c4bc89897e129702"
+    ]
+  },
+  "chatcut:transcription": {
+    "titleZh": "转写与字幕",
+    "summaryZh": "在 ChatCut 插件中处理语音转写、字幕和口播剪辑准备。",
+    "sourceHashes": [
+      "a685b7cb1e37a2ec0256728c9e44cd6c97e1b9dd092a398a31f0e296980871df"
+    ]
+  },
+  "chatcut:verification": {
+    "titleZh": "ChatCut 剪辑核验",
+    "summaryZh": "核对插件操作是否实际反映到项目结构和时间线画面中。",
+    "sourceHashes": [
+      "5439b68d53bda7e086624b90f44837e48d469f8e20bb65e02ce0cf481fd3fe63"
+    ]
+  },
+  "chatcut:video-gen": {
+    "titleZh": "AI 视频生成",
+    "summaryZh": "用文字、图片或参考素材生成视频，也可修改已有生成片段。",
+    "sourceHashes": [
+      "88412474ea212e465397d132d843a1e5c713d2fdd009d65696a6db04558c6b4a"
+    ]
+  },
+  "chatcut:voice": {
+    "titleZh": "配音与音效生成",
+    "summaryZh": "生成语音、旁白和音效，并将音频对齐视频时间线。",
+    "sourceHashes": [
+      "a3820a1232e4851cff948637bec97d2d4bb4bd4054c1b49fc818ca45d383edde"
+    ]
+  },
+  "chatcut:widget-forms": {
+    "titleZh": "ChatCut 输入表单",
+    "summaryZh": "使用插件宿主支持的表单收集结构化输入。",
+    "sourceHashes": [
+      "2e0185402e201dc4255656fceade1a99037239b404c5b40ffcc4c1210c70031e"
+    ]
+  },
+  "codebase-inspection": {
+    "titleZh": "代码库概览",
+    "summaryZh": "统计代码行数、语言构成和比例，快速了解项目规模。",
+    "sourceHashes": [
+      "1b1ed7efbe5618987669d04e5227bdaa2c1b75e8a46d20fd5c432739fd4b6e9c"
+    ]
+  },
+  "codex": {
+    "titleZh": "Codex 编程委托",
+    "summaryZh": "把功能开发、代码修改和 PR 任务交给 Codex CLI 执行。",
+    "sourceHashes": [
+      "40ab1ae8ee55006c063010fa2030536af4205352ada37d7102274de0b5afe256"
+    ]
+  },
+  "codex-practical-token-saver": {
+    "titleZh": "精简编程工作流",
+    "summaryZh": "精简编码过程和沟通，同时保留必要的验证。",
+    "sourceHashes": [
+      "feb9a55892d6c5666a4350941fedb23b5955adbc6ad423b0c4c85188e4a156c7"
+    ]
+  },
+  "competitor-news-monitor": {
+    "titleZh": "竞品动态追踪",
+    "summaryZh": "跟踪指定公司的重要动态，整理附有来源的摘要。",
+    "sourceHashes": [
+      "59506f1cde699ea4405975afca67d9ce94c19aa95e31b740dc62858195287b4a"
+    ]
+  },
+  "content-research-writer": {
+    "titleZh": "调研写作助手",
+    "summaryZh": "收集资料和引用，改进开头、大纲与文章各部分。",
+    "sourceHashes": [
+      "009c394427bdd46285ffb7dfb6261cafcbf3d48a5c9cefc3950ac6460f16b8f6"
+    ]
+  },
+  "content-strategy": {
+    "titleZh": "内容选题与规划",
+    "summaryZh": "确定写什么、面向谁，并规划主题方向和内容日程。",
+    "sourceHashes": [
+      "6d4a53fb31fbb44be49ac48c1804ce5a6b4e5f78ccdbb4eaf21ca101150a763b"
+    ]
+  },
+  "create-storyboard": {
+    "titleZh": "影视分镜制作包",
+    "summaryZh": "把剧本或广告创意整理为分镜、镜头卡和视频生成素材。",
+    "sourceHashes": [
+      "368429ea204f2c902c009a7bf85ae7f53df22a7fa3699768a8e10ac4cd6f8e7f"
+    ]
+  },
+  "csp": {
+    "titleZh": "角色 Skill 制作",
+    "summaryZh": "根据角色与作品资料，制作可追溯、可更新的角色技能。",
+    "sourceHashes": [
+      "1bb570696e43eee95142fbbda0a3c876d9011155d6aa5e16c7d65ec381d22ef9"
+    ]
+  },
+  "design-prd": {
+    "titleZh": "产品需求文档",
+    "summaryZh": "根据需求和创意方案整理规范的 PRD，供后续设计使用。",
+    "sourceHashes": [
+      "a0f0ccabbc6d5189dfa870282371495d8ea699130fca9a7a7ceb0728d052297a"
+    ]
+  },
+  "document-to-action-items": {
+    "titleZh": "文档待办提取",
+    "summaryZh": "从文档提取任务、期限和义务，并保留对应依据。",
+    "sourceHashes": [
+      "c5ac36b956fcc9890cba5ee04619aa28378f33ff8110930d13e6854d0593f889"
+    ]
+  },
+  "documents:documents": {
+    "titleZh": "Word 文档编辑",
+    "summaryZh": "创建、编辑和批注文档，并通过渲染检查页面排版。",
+    "sourceHashes": [
+      "b48a8dfdc69885e27618b8fef3ad835e76c494fa83794119d5dda5c9372b8b07"
+    ]
+  },
+  "draw-ui": {
+    "titleZh": "界面设计与还原",
+    "summaryZh": "制作网页和 App 设计稿，也可按截图还原前端界面。",
+    "sourceHashes": [
+      "d8f76189318dbf2c57c1cb18c40da5adb4d06bab92a78c3840a45473704b0aae"
+    ]
+  },
+  "drawixx": {
+    "titleZh": "Drawixx 结构图",
+    "summaryZh": "用 Markdown 创建、读取和更新可编辑的结构图与流程图。",
+    "sourceHashes": [
+      "a3622444c8c5a9fdabab68e64b227caa9f3b6b25e18931af703bdefb3fd8c76d"
+    ]
+  },
+  "ego-browser": {
+    "titleZh": "浏览器操作",
+    "summaryZh": "打开网页、填写表单、提取信息，也可进行页面联调和检查。",
+    "sourceHashes": [
+      "691f937dfb0511f2794c43f5c807ebb9530375fcaf1c49f8cfc894881eaae2ba"
+    ]
+  },
+  "email-inbox-triage": {
+    "titleZh": "邮件整理",
+    "summaryZh": "梳理收件箱的优先级，并准备回复草稿。",
+    "sourceHashes": [
+      "74d2eaf00d5f07e4b713281537f70b922935647fce774f091be13439aa8e3faf"
+    ]
+  },
+  "experience-map": {
+    "titleZh": "服务体验地图",
+    "summaryZh": "梳理跨产品、渠道和角色的接触点与关系。",
+    "sourceHashes": [
+      "b1f32d746741eff796d27553446f03184416de2a37e92912bce9efd6bb105b6b"
+    ]
+  },
+  "find-animation-opportunities": {
+    "titleZh": "动效机会检查",
+    "summaryZh": "找出适合增加动画的位置，提出具体方案而不直接改代码。",
+    "sourceHashes": [
+      "1d850d3dab263049f1c24b3d0e52f147a8fa6448416dffa5c1de38db1c03e80b"
+    ]
+  },
+  "find-skills": {
+    "titleZh": "查找可用技能",
+    "summaryZh": "根据想完成的任务发现和安装合适的 Agent 技能。",
+    "sourceHashes": [
+      "294d7a1a9af83de93929bed4f52a6bd71cb1309460a98414118dcf463f891add"
+    ]
+  },
+  "findmy": {
+    "titleZh": "查找 Apple 设备",
+    "summaryZh": "在 macOS 上通过“查找”定位 Apple 设备和 AirTag。",
+    "sourceHashes": [
+      "1b6058fc2d99602e68eea57284a49c5df09ad765521e95ebbe64f710deed1217"
+    ]
+  },
+  "finesse-brief": {
+    "titleZh": "工作台需求梳理",
+    "summaryZh": "把模糊想法整理成可交给界面开发的工作台规格。",
+    "sourceHashes": [
+      "698c0c85754387324781f37eddf10d49471669e42ce96347bfbb1abf00c7649c"
+    ]
+  },
+  "finesse-ui": {
+    "titleZh": "网页界面制作",
+    "summaryZh": "制作品牌网站、产品后台和工作流界面，精修视觉与交互。",
+    "sourceHashes": [
+      "6402879587891c6d3266bc3ce96b01c2828b0321624449892fda7fa4e9a26f5e"
+    ]
+  },
+  "frontend-design": {
+    "titleZh": "前端视觉设计",
+    "summaryZh": "确定页面的视觉方向、字体和细节，避免模板化表达。",
+    "sourceHashes": [
+      "38b081f345c6acb6e82efeaf3971bb293bfa2c72a57327fcc2aba0ee64b109a7"
+    ]
+  },
+  "game-art-direction": {
+    "titleZh": "游戏美术方向",
+    "summaryZh": "定义游戏的视觉风格、反馈方式和关键场景表现。",
+    "sourceHashes": [
+      "a389ffac185121b9c69f96213892e9ff7c62b5f6aad37b44196dc1b08d7144eb"
+    ]
+  },
+  "game-build": {
+    "titleZh": "游戏原型与开发",
+    "summaryZh": "根据设计制作可运行的白盒原型或已确认的游戏版本。",
+    "sourceHashes": [
+      "9a90fd0aff0cd9ddbda9dd68609f7f0b01e735df455eb07d5229274051db8ba3"
+    ]
+  },
+  "game-concept": {
+    "titleZh": "游戏概念设计",
+    "summaryZh": "从小说资料比较不同玩法方向，选出可玩的改编方案。",
+    "sourceHashes": [
+      "2bbfbd2da4c23cec9b07b0f5463e095614f3b2bb47a6977328280d7342d3719c"
+    ]
+  },
+  "game-qa": {
+    "titleZh": "游戏运行验证",
+    "summaryZh": "实际启动游戏，检查画面、输入、核心循环和重开流程。",
+    "sourceHashes": [
+      "006baa532d3002eb1d1c18a704d87b717511907911ca78e6f3ed5af47d49dd89"
+    ]
+  },
+  "game-world-design": {
+    "titleZh": "游戏系统与关卡",
+    "summaryZh": "把玩法概念落实为世界规则、系统、关卡节奏和原型。",
+    "sourceHashes": [
+      "58709815d4cf52fb5834056a7d7fe0844c573ca153cc345d2cb04dd02f6ceaee"
+    ]
+  },
+  "gbro-collage-broll": {
+    "titleZh": "纸拼贴配画面",
+    "summaryZh": "把短口播文稿转成半调纸拼贴画面与动画方案。",
+    "sourceHashes": [
+      "1013b55e9dd21877a00152eac5621503d6d6e35f9a49d0cbcba6ef530447a8dc"
+    ]
+  },
+  "geo": {
+    "titleZh": "生成式搜索优化",
+    "summaryZh": "诊断网站在 AI 答案中的表现，准备优化工单和交付素材。",
+    "sourceHashes": [
+      "b2963315a18569d1d16e78c9662fb57c13688494e43d22489f05a4449ae1677c"
+    ]
+  },
+  "get-job": {
+    "titleZh": "求职与面试准备",
+    "summaryZh": "围绕目标岗位调研公司、调整简历，并分轮准备面试。",
+    "sourceHashes": [
+      "0aa7fb40fdc76f219cb03d8895ec313b19387965b9d8c7fa1c788dc7a109eaf1"
+    ]
+  },
+  "github-auth": {
+    "titleZh": "GitHub 登录配置",
+    "summaryZh": "配置 GitHub 的 HTTPS、SSH 或 gh CLI 登录方式。",
+    "sourceHashes": [
+      "c467ab384d5dd52750dac6c7600b32e16f52198e071c72c6ec5f9cbcb153d2eb"
+    ]
+  },
+  "github-issues": {
+    "titleZh": "GitHub 议题管理",
+    "summaryZh": "创建、分类、标记和分配 GitHub Issues。",
+    "sourceHashes": [
+      "5b6043e77c9d77c69c6998e2608d2a44ff6ae7579056db5c14beffb9e39e5d1e"
+    ]
+  },
+  "gpt-taste": {
+    "titleZh": "网页设计与 GSAP 动效",
+    "summaryZh": "处理网页布局、字体层级和基于 GSAP 的滚动动画。",
+    "sourceHashes": [
+      "06259ff9ce9aac039893a7d9bc1fceef154b5fff9afcd7d4edc36e24e835279c"
+    ]
+  },
+  "grill-me": {
+    "titleZh": "方案追问",
+    "summaryZh": "通过连续追问梳理计划中的假设、漏洞和取舍。",
+    "sourceHashes": [
+      "af369b2877a810f637075b5dd90acdb2367febaa440c1ceac2dedc175929bf02"
+    ]
+  },
+  "holo-card-studio": {
+    "titleZh": "全息卡片网站",
+    "summaryZh": "用分层插画、Blender 和 Three.js 制作可交互的全息卡片。",
+    "sourceHashes": [
+      "c436720a59bcc598cb02164b5b35ea365f24b85cf37399fd547de7c8f033dbda"
+    ]
+  },
+  "huggingface-hub": {
+    "titleZh": "Hugging Face 资源管理",
+    "summaryZh": "搜索、下载和上传 Hugging Face 模型与数据集。",
+    "sourceHashes": [
+      "1346e7401f8749b2879d83c2c47807e0e085b24b55704da8cd9a4aa5e77e8693"
+    ]
+  },
+  "humanized-chinese-writing-polisher": {
+    "titleZh": "中文表达润色",
+    "summaryZh": "保留原意，改善中文文章、口播和社交文案的自然度。",
+    "sourceHashes": [
+      "2678a77662bf4c76fbf8487887d7b03aae4ab5863c0678aa24dd23c94163efb1"
+    ]
+  },
+  "humanizer-zh:humanizer-zh": {
+    "titleZh": "中文去机械表达",
+    "summaryZh": "调整生硬的翻译腔和 AI 式表达，让长文更自然。",
+    "sourceHashes": [
+      "b00070ea05e33e1e33a555775c4d4a9e219a32981b77d17116ca36ee89682695"
+    ]
+  },
+  "imessage": {
+    "titleZh": "iMessage 消息操作",
+    "summaryZh": "在 macOS 上通过命令行收发 iMessage 和短信。",
+    "sourceHashes": [
+      "2476860ec8284d4301bce74ba710e96fe9dfd08f1df9e42ccf296c7f36bfb403"
+    ]
+  },
+  "local-background-removal": {
+    "titleZh": "本地图片去背景",
+    "summaryZh": "使用本地抠图模型处理商品、人像和批量图片背景。",
+    "sourceHashes": [
+      "e6cdf1ea4a606b3e67d11d2ba48a586665cf76be0dfeac3fcf8971f4ddb93cd4"
+    ]
+  },
+  "logo-animation": {
+    "titleZh": "品牌 Logo 动画",
+    "summaryZh": "制作 Logo 揭示、片头、加载动画和图标变形效果。",
+    "sourceHashes": [
+      "4d075e5c005f8a70803f3341250e6478926ea54fe3089b0d9775d8fcb4526cd2"
+    ]
+  },
+  "machine": {
+    "titleZh": "交互式机械模拟",
+    "summaryZh": "把机械主题制作成可操作的 3D 模拟和配套演示影片。",
+    "sourceHashes": [
+      "140d68744c97607d9a5aae0a0d3158380e13e80fed390012123da00f2029b5c2"
+    ]
+  },
+  "maps": {
+    "titleZh": "地图与路线查询",
+    "summaryZh": "查询地理编码、地点、路线和时区信息。",
+    "sourceHashes": [
+      "6ab49f90dbf9ed1588095ed252db24191ea07fda5cf419d048aeefc7dc9aa23f"
+    ]
+  },
+  "market-research": {
+    "titleZh": "市场与行业调研",
+    "summaryZh": "研究市场规模、竞争对手和行业动态，保留引用来源。",
+    "sourceHashes": [
+      "b397b4d01557d1266fb903b48446232dfb75886d17940edb3194e8bff1dd4624"
+    ]
+  },
+  "marketplace-platform-research": {
+    "titleZh": "平台商家调研",
+    "summaryZh": "研究交易平台中的卖家、定价和竞争情况。",
+    "sourceHashes": [
+      "dc331f31f5033e27a28fe6eedf3646051826993dd377b93d4ec4254ad2b5f819"
+    ]
+  },
+  "meeting-action-items": {
+    "titleZh": "会议行动清单",
+    "summaryZh": "从会议记录整理决策、负责人和可执行任务。",
+    "sourceHashes": [
+      "d84423f5b7576114c894eaed3a3592c0fbba45fd63c6b68c5ce6ad14aa902547"
+    ]
+  },
+  "merge-reconciler": {
+    "titleZh": "代码合并协调",
+    "summaryZh": "以第三方视角核对并处理多个 Agent 的代码合并冲突。",
+    "sourceHashes": [
+      "4f3d27e599f9557637372268093462ec340c65e06f04ca0cae54aecd853e5510"
+    ]
+  },
+  "mobile-app-ui-design": {
+    "titleZh": "移动 App 界面设计",
+    "summaryZh": "设计手机页面、导航、操作流程和可视化原型。",
+    "sourceHashes": [
+      "ef9e5ee4d3d53c12c21a14034195326cd6c310d5c78693d82007af6d7906541a"
+    ]
+  },
+  "mono-color": {
+    "titleZh": "单色与双色海报",
+    "summaryZh": "从主题或参考图创作单色、双色印刷风格的编辑视觉。",
+    "sourceHashes": [
+      "4f9c33b342c6e55fb38e6bd733a5888cf7bb4b0ac19f75675065995992dfeda7"
+    ]
+  },
+  "novel-game-analyze": {
+    "titleZh": "小说游戏化分析",
+    "summaryZh": "从原文提取世界规则、角色动机和可转化为玩法的内容。",
+    "sourceHashes": [
+      "65570f58e601523fc8a1d2ad043b10e3c89baf19acbc53029984676564600d01"
+    ]
+  },
+  "novel-to-game": {
+    "titleZh": "小说改编游戏",
+    "summaryZh": "串联小说分析、玩法选择、世界设计、开发和运行验证。",
+    "sourceHashes": [
+      "840b3f3ffeb53614e8c390dd66eb0e802581e09812d4015cad360ab4f1cdd74e"
+    ]
+  },
+  "obsidian": {
+    "titleZh": "Obsidian 笔记管理",
+    "summaryZh": "读取、搜索、新建和编辑 Obsidian 知识库中的笔记。",
+    "sourceHashes": [
+      "a55b813bde20dd8ec30ee7855c59686c3827b13800bc76a0eddbbaa63b6505c2"
+    ]
+  },
+  "oil-motion": {
+    "titleZh": "交互动效开发",
+    "summaryZh": "制作由滚动、指针、拖拽、触摸或数据驱动的网页动画。",
+    "sourceHashes": [
+      "78de767ba151632059424027deeb1e194905f434b1d69da8f46661a658651593"
+    ]
+  },
+  "openhue": {
+    "titleZh": "Hue 灯光控制",
+    "summaryZh": "通过 OpenHue 管理 Philips Hue 灯光、房间和场景。",
+    "sourceHashes": [
+      "4d540a6bd2c9d65093159bb3f31517ff0f14d1eb9b7f8325dc59540de6c3afc1"
+    ]
+  },
+  "paper-explainer": {
+    "titleZh": "手绘科普交互",
+    "summaryZh": "把器械、实验和科学过程做成可操作的手绘图解。",
+    "sourceHashes": [
+      "6495dbbcba029a135a9a8297f9335db145a419aa63038b5d67023ae23c94bf9f"
+    ]
+  },
+  "pdf:pdf": {
+    "titleZh": "PDF 阅读与制作",
+    "summaryZh": "提取、编辑和生成 PDF，并检查排版及可填写表单。",
+    "sourceHashes": [
+      "e25edd0166362c561f26649538bbbb54f6f125507365966111797d0f52c9577d"
+    ]
+  },
+  "personal-career-os": {
+    "titleZh": "个人求职资料库",
+    "summaryZh": "维护经历与简历，按岗位准备投递材料并记录求职进度。",
+    "sourceHashes": [
+      "bdbc779a00cdf0e4e62e11cbb0c4be78f6e355dec0bdd05513ea2c2db397dc0d"
+    ]
+  },
+  "pixel2motion": {
+    "titleZh": "图片 Logo 转动画",
+    "summaryZh": "把图片 Logo 转成平滑 SVG，再制作可独立播放的动画。",
+    "sourceHashes": [
+      "b7f6f5c26feab7da91a6c41e1744e018cd8fe769d2c5e6f642ec889096fa35ea"
+    ]
+  },
+  "platform-service-market-research": {
+    "titleZh": "内容平台服务调研",
+    "summaryZh": "研究抖音等内容平台上的服务市场。",
+    "sourceHashes": [
+      "ed2d88d01fa05b3515c66d76c5b8274d116f59f78842d608991892d7e24af380"
+    ]
+  },
+  "poster-design-generation": {
+    "titleZh": "海报设计生成",
+    "summaryZh": "为电影、活动、产品和旅行等主题生成海报设计。",
+    "sourceHashes": [
+      "32dadabc956f2f451f527a5c955d5bbfd019851960e3bb3178e1ca194c8cf94a"
+    ]
+  },
+  "presentations:Presentations": {
+    "titleZh": "演示文稿制作",
+    "summaryZh": "读取、创建和编辑幻灯片，按目标格式交付演示文稿。",
+    "sourceHashes": [
+      "7a998aaca80e2142e051d818c3b4e629cc6f9b5458096e34a40e07a844379377"
+    ]
+  },
+  "product-price-monitor": {
+    "titleZh": "价格变动追踪",
+    "summaryZh": "关注商品、机票或指定条目的价格，并按目标提醒。",
+    "sourceHashes": [
+      "0ef0cb48cab170dc9641fe67c82f9e92d013babb0df96c5eda7d5efc0fe2b726"
+    ]
+  },
+  "productlens": {
+    "titleZh": "产品设计学习",
+    "summaryZh": "从实际产品讲解界面、交互和技术知识，帮助准确表达需求。",
+    "sourceHashes": [
+      "477dd8d40834e5e880f9a1a8550a7a535eb0040c2622cf6e63247fb5666440cb"
+    ]
+  },
+  "project-progress": {
+    "titleZh": "项目完成度评估",
+    "summaryZh": "根据真实功能与交付证据判断进度和发布准备情况。",
+    "sourceHashes": [
+      "68b1d7be2ca5250d18b71a527fce42325f257d07a8e595fdbb79b6f28622efd8"
+    ]
+  },
+  "remotion-best-practices": {
+    "titleZh": "Remotion 使用入口",
+    "summaryZh": "按视频任务选择对应的 Remotion 制作与处理技能。",
+    "sourceHashes": [
+      "ab0760daddb4df33136efdc7a3999178e53e066b74f089343b3c2e6dd45b50e9"
+    ]
+  },
+  "remotion-captions": {
+    "titleZh": "Remotion 字幕",
+    "summaryZh": "转写、显示并制作字幕动画。",
+    "sourceHashes": [
+      "a3e716660381b1338360a717e475eb982bcfb963b056a26fe6d35840c9466a17"
+    ]
+  },
+  "remotion-create": {
+    "titleZh": "创建 Remotion 视频",
+    "summaryZh": "创建新的 Remotion 视频项目。",
+    "sourceHashes": [
+      "4eec3f50422e4e8690b96520e89d9f5470539a1591ef5cabb148f48ee389e6ed"
+    ]
+  },
+  "remotion-docs": {
+    "titleZh": "Remotion 文档查询",
+    "summaryZh": "搜索 Remotion 的使用文档。",
+    "sourceHashes": [
+      "9857680fa381a676527f2540080e8fd6027a95bf64313d9fb6799f101366ac3e"
+    ]
+  },
+  "remotion-interactivity": {
+    "titleZh": "Remotion 交互结构",
+    "summaryZh": "组织适合交互使用的 Remotion 页面和视频结构。",
+    "sourceHashes": [
+      "48f4bd3cce87e64ce3ffd8782385413c30cd1a45a3b4d4f8caaed3667c9295a7"
+    ]
+  },
+  "remotion-maps": {
+    "titleZh": "Remotion 地图动画",
+    "summaryZh": "处理 Remotion 视频中的地图动画。",
+    "sourceHashes": [
+      "435a376059f1a488bc71c0c8402e71862ded4d8e4005291286e110972a925445"
+    ]
+  },
+  "remotion-markup": {
+    "titleZh": "Remotion 内容与动效",
+    "summaryZh": "参考内容组织、动画和效果的制作实践。",
+    "sourceHashes": [
+      "e065f37ea03a19f24b8fba58d66e08a0c146e8718c444132b3e326a847bf4155"
+    ]
+  },
+  "remotion-multimedia": {
+    "titleZh": "Remotion 媒体处理",
+    "summaryZh": "使用 Mediabunny 处理媒体内容。",
+    "sourceHashes": [
+      "6608f749906f64be63128be8e7e3603ce030521836b1a108bd0877b634e9d948"
+    ]
+  },
+  "remotion-render": {
+    "titleZh": "Remotion 视频导出",
+    "summaryZh": "渲染并导出 Remotion 视频。",
+    "sourceHashes": [
+      "f80a5d302054ae2f13211994bc34535c9ad4663f5bc49ca5c306cf3009267b6a"
+    ]
+  },
+  "remotion-saas": {
+    "titleZh": "Remotion 应用开发",
+    "summaryZh": "使用 Remotion 构建视频相关应用。",
+    "sourceHashes": [
+      "858d1b06a159503dba6b84945bb771a063f402af97a0d9c1a05ca968cc67c819"
+    ]
+  },
+  "remotion-studio": {
+    "titleZh": "Remotion 视频预览",
+    "summaryZh": "在 Remotion Studio 中查看视频。",
+    "sourceHashes": [
+      "ff8d110dd7596333fd2be6e4736f86794ec0fe2f1fa1221db0d7a516e96c5dcf"
+    ]
+  },
+  "remotion-upgrade": {
+    "titleZh": "Remotion 版本升级",
+    "summaryZh": "升级 Remotion 及其相关依赖。",
+    "sourceHashes": [
+      "a2d3e71997d1aec4d6a1c3c3aecf746561497d3cef69484631fcd592dc4eb173"
+    ]
+  },
+  "reverse-engineer-anything": {
+    "titleZh": "软件逆向分析",
+    "summaryZh": "基于成品程序或运行证据分析功能、版本差异和实现方式。",
+    "sourceHashes": [
+      "4f6febf372bfdd3dac20c2235cb23371d565c6ae1f5eb9c279ddefb30d219b76"
+    ]
+  },
+  "samoyed-xhs-comics": {
+    "titleZh": "萨摩耶小红书漫画",
+    "summaryZh": "沿用已有萨摩耶角色与手绘风格，制作漫画、封面和分镜。",
+    "sourceHashes": [
+      "6cb7d5aee7ac6ef2e97b9e6e6643353dbdb3e63da62efe56c4e8f07627527936"
+    ]
+  },
+  "scene-distillation-zine-v1-3": {
+    "titleZh": "照片提炼艺术海报",
+    "summaryZh": "把照片主题转成原创抽象插画、视觉隐喻和编辑式海报。",
+    "sourceHashes": [
+      "94b7d4677218bad9a0471fe46691eeeedde9f792d1d7f6cec79220dcdcb2d51f"
+    ]
+  },
+  "scenes-gathered-zine-v1-3": {
+    "titleZh": "照片纸本拼贴",
+    "summaryZh": "把原始照片与简化插画、撕纸边缘组成竖版拼贴海报。",
+    "sourceHashes": [
+      "7d508e1ab831dc75623290be35337a427c5acf9bbea76da33dfc38064cb7cbfd"
+    ]
+  },
+  "sdlc-review": {
+    "titleZh": "开发交接审查",
+    "summaryZh": "审查看板交接，并根据已验证的结果安排下一步。",
+    "sourceHashes": [
+      "109c7b108935e13b1d968ee2c1d35cf52fcb26dce30cda58e80676486bb0f122"
+    ]
+  },
+  "sepia": {
+    "titleZh": "写作去 AI 痕迹",
+    "summaryZh": "诊断并调整小说或专业文本的结构与表达，减少机械感。",
+    "sourceHashes": [
+      "11a5d36760082ef14d5d5fd4552fa14dcb1b7b125522950772a086a28731011f"
+    ]
+  },
+  "shuorenhua:shuorenhua": {
+    "titleZh": "说人话",
+    "summaryZh": "检查中英文中的模板化表达，在保留事实的基础上改写。",
+    "sourceHashes": [
+      "f9a0a270255c06f7bf114d9851aa05d6bafb784f22e9d10d19ac38a126546abe"
+    ]
+  },
+  "skillbridge": {
+    "titleZh": "Agent 资料管理",
+    "summaryZh": "整理本机技能、MCP、记忆和规则，在 GUI 中选择交接内容。",
+    "sourceHashes": [
+      "42f2067ada136422b148d6ed42eb7add1339ad1a1d876e009857a63eae859c91"
+    ]
+  },
+  "songwriting-and-ai-music": {
+    "titleZh": "歌曲创作与 AI 音乐",
+    "summaryZh": "协助歌曲创作，并编写 Suno 音乐生成提示词。",
+    "sourceHashes": [
+      "dab7242901a20f1275e20df583dabc68474cf4260531bdc16322ae9a99059909"
+    ]
+  },
+  "special-product-designer": {
+    "titleZh": "产品体验设计",
+    "summaryZh": "以使用体验为中心开展产品设计。",
+    "sourceHashes": [
+      "6f978adc3c830d289a2e9a1765c5d0434610c4b254fec746b03992db8f3edaee"
+    ]
+  },
+  "spreadsheets:Spreadsheets": {
+    "titleZh": "表格制作与分析",
+    "summaryZh": "编辑表格文件和 Google Sheets，处理公式、格式与图表。",
+    "sourceHashes": [
+      "7b49b1f9dbe93fdcf0f7472c2a919d14951e2cfeb7d9c1d38f57c27d003d378b"
+    ]
+  },
+  "spreadsheets:excel-live-control": {
+    "titleZh": "操作正在打开的 Excel",
+    "summaryZh": "通过连接的 Excel 会话或加载项操作当前工作簿。",
+    "sourceHashes": [
+      "2de8bdae2ff4cfe092b7370479633d34b2377e548fbfa4e1e5b96502f34b9a41"
+    ]
+  },
+  "storyboard-9grid": {
+    "titleZh": "九宫格电影分镜",
+    "summaryZh": "把故事拆成九格画面，并为每格编写生图提示词。",
+    "sourceHashes": [
+      "aa04a40e88813292199a596ff3faf2499f4912f6ac3668d1295ac87317ab9261"
+    ]
+  },
+  "storyboard-prompt-generator": {
+    "titleZh": "分镜提示词",
+    "summaryZh": "把创意整理成风格一致的分镜、广告和视觉提案提示词。",
+    "sourceHashes": [
+      "5fdab45062fe211a5cd5937b7b63fb7e1d48889d74dec56444be18ca0b05b457"
+    ]
+  },
+  "storyboard-video-previs": {
+    "titleZh": "影视分镜预演",
+    "summaryZh": "把故事、脚本或音乐视频想法转成镜头表和视听预演方案。",
+    "sourceHashes": [
+      "b631a86b9e1491cc2a7ab65c27c31165ff31bf78c5cc2a0331d69682185a940f"
+    ]
+  },
+  "tait-crt-interface-skill": {
+    "titleZh": "复古 CRT 界面插画",
+    "summaryZh": "把人物或主题重绘成带复古电脑窗口的像素编辑插画。",
+    "sourceHashes": [
+      "5b0c955f8e016cbfaf6a7f4fcb82520608d8adc6c6dc359a7a5c6db4dbd46206"
+    ]
+  },
+  "team-mode": {
+    "titleZh": "多 Agent 协作",
+    "summaryZh": "为适合拆分的任务安排子 Agent，由主 Agent 协调和验收。",
+    "sourceHashes": [
+      "742b1e06b63ab8b38876e3f3679ae9296a23bedeebf0e3483e6aac0b73e858f8"
+    ]
+  },
+  "template-creator:template-creator": {
+    "titleZh": "个人文档模板",
+    "summaryZh": "把参考文档、表格或演示稿整理成可重复使用的模板技能。",
+    "sourceHashes": [
+      "922055695baa90be989f80b29f6031bee871ee817e14c8e5ca5f918a5f21c6e6"
+    ]
+  },
+  "trailer-director": {
+    "titleZh": "预告片视觉导演",
+    "summaryZh": "编排电影感画面、镜头与光影，并制作生图提示词。",
+    "sourceHashes": [
+      "8c88eb3c39e3c5d1e54550d220137c10d824214bb5809f7453601dd2513e91d4"
+    ]
+  },
+  "ui-taste": {
+    "titleZh": "界面审美与精修",
+    "summaryZh": "参考真实产品，改进网页或 iOS 界面的设计和完成质量。",
+    "sourceHashes": [
+      "c55a49ac9725e4c76bd997f5ec4a80c2a14f9fd00a68284cf21d8545e1e6296a"
+    ]
+  },
+  "ui-ux-pro-max": {
+    "titleZh": "界面设计参考库",
+    "summaryZh": "查询风格、配色、字体和交互规范，辅助多端界面设计。",
+    "sourceHashes": [
+      "aa69a5077cf26a79603d1200be22e5ea5b1a4be19f7f4919fdac5dc91f22b0e0"
+    ]
+  },
+  "voice-orb-design": {
+    "titleZh": "语音光球组件",
+    "summaryZh": "浏览已有语音光球样式，选择并接入 React 或 WebGL 组件。",
+    "sourceHashes": [
+      "03395629f29f42850b44c3a369f128a4ae96e48491f81682b12798a83c681945"
+    ]
+  },
+  "weekly-review-planning": {
+    "titleZh": "每周复盘与计划",
+    "summaryZh": "梳理承诺、停滞事项和下一周的安排。",
+    "sourceHashes": [
+      "f30a93c4a93b8e7c26488e41c4684c1bfa0487361524a825095ae5dd5a015ebf"
+    ]
+  },
+  "write-a-prd": {
+    "titleZh": "需求访谈与 PRD",
+    "summaryZh": "通过需求访谈和代码分析形成产品需求文档与模块设计。",
+    "sourceHashes": [
+      "cb4f30ac0b53a16c922b255b7848fc68fcf78a28959259f91ac701eb4db582e7"
+    ]
+  },
+  "x-post-card": {
+    "titleZh": "社交图文卡片",
+    "summaryZh": "把提供的文案、头像和图片排成 X 风格卡片或小红书轮播。",
+    "sourceHashes": [
+      "9f7e72c475c30e52038768d9ccce236736875b292277fb951bc4182e53996b86"
+    ]
+  },
+  "xhs-visual-director": {
+    "titleZh": "小红书视觉设计",
+    "summaryZh": "规划封面、轮播图的视觉方向、版式和生图提示词。",
+    "sourceHashes": [
+      "1324b542b657524c7c88e47198c4acca9f4d27b5229625739221eaa437d377ae"
+    ]
+  },
+  "zhihu-search": {
+    "titleZh": "知乎内容搜索",
+    "summaryZh": "搜索知乎并获取标题、摘要、作者和内容链接。",
+    "sourceHashes": [
+      "bf4951aac6dac06176dd844cb334152d2744e7608122cf3189bfda287c39a2d2"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "skillbridge",
+  "version": "0.2.0-mvp",
+  "description": "Local Agent profiles, confirmed frequent resources, carts and complete handoff packages with a shared CLI and HTTP API.",
+  "entry": "backend/main.py",
+  "commands": {
+    "dashboard": "python backend/main.py dashboard",
+    "workspace": "python backend/main.py workspace status",
+    "workspaceServer": "python backend/main.py workspace serve"
+  },
+  "platforms": ["windows"],
+  "localOnly": true,
+  "phases": {
+    "current": 1
+  }
+}
