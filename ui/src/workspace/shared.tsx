@@ -1,5 +1,6 @@
 import { Button } from "@astryxdesign/core/Button";
 import { Glyph } from "./Glyph";
+import { sourceNames } from "./provenance";
 import { asError, problemText } from "./api";
 import type { Asset, Kind, Problem, Omission } from "./types";
 
@@ -55,8 +56,7 @@ export const confirmationName = (value: string) =>
     outdated: "已过期",
     not_required: "无需确认",
   })[value] || value;
-export const sourceName = (asset: Asset) =>
-  asset.environment?.harness || "未标明应用";
+export const sourceName = (asset: Asset) => sourceNames(asset).join(" / ");
 export const scopeName = (asset: Asset) =>
   ({ personal: "个人", project: "项目", environment: "应用环境" })[
     asset.scope.type

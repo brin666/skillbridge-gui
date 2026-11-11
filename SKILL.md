@@ -21,6 +21,8 @@ Read [the backend contract](docs/backend-api.md) for exact request bodies and er
 
 ## Organize and hand off
 
+For a combined local Codex, Claude Code, Hermes and Pi inventory, use `python scripts/harness_inventory.py --data-dir ABSOLUTE_PROFILE --project ABSOLUTE_PROJECT --harness all`. Read [the inventory coverage and startup guide](docs/harness-inventory.md) first. This optional intake requires Python 3.11+ and `scripts/requirements-inventory.txt`; Codex also requires its installed CLI. `--dry-run` discovers without writing the profile. Keep missing directories, parse errors, excluded links and unsupported extension storage visible. Do not claim every discovered file is active in a Harness session. Preserve existing selections and preferences. The existing GUI can filter a shared asset by any recorded source.
+
 ```powershell
 python backend/main.py workspace status
 python backend/main.py workspace common

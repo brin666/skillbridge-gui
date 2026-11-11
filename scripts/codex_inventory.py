@@ -26,6 +26,7 @@ from backend.workspace.errors import WorkspaceError
 from backend.workspace.router import dispatch
 from backend.workspace.service import Workspace
 from scripts.catalog_presentation import enrich_requests
+from scripts.inventory_common import merge_environment, source_identity
 
 
 def canonical(path):
@@ -236,18 +237,22 @@ def discover(codex_home, project, catalog):
 def register(workspace, requests):
     """One API contract, including sanitization, fingerprints, IDs and optimistic versions."""
     existing = dispatch(workspace, "GET", "/api/v1/assets?includeSystem=true&includeArchived=true")[1]["items"]
-    inline = {(a["kind"], a["source"].get("sourceKey"), a["source"].get("serverName")): a
-              for a in existing if a["source"]["type"] == "inline"}
+    indexed = {source_identity(a): a for a in existing}
     registered, errors = [], []
     for body in requests:
         body = dict(body)
-        if "content" in body:
-            previous = inline.get((body["kind"], body.get("sourceKey"), body.get("serverName")))
-            if previous:
-                body["expectedVersion"] = previous["version"]
+        requested_harness = (body.get("environment") or {}).get("harness")
+        previous = indexed.get(source_identity(body))
+        if previous and previous.get("ownership") == "system":
+            body["ownership"] = "system"
+        if "content" in body and previous:
+            body["expectedVersion"] = previous["version"]
+        body["environment"] = merge_environment((previous or {}).get("environment"), body.get("environment"))
         try:
             asset = dispatch(workspace, "POST", "/api/v1/assets", body)[1]
+            indexed[source_identity(asset)] = asset
             registered.append({"assetId": asset["id"], "kind": asset["kind"], "title": asset["title"],
+                               "harness": requested_harness,
                                "ownership": asset["ownership"], "source": body.get("path", body.get("sourceKey")),
                                "omissions": len(asset["omissions"]), "followUps": len(asset["followUps"])})
         except (WorkspaceError, OSError) as exc:

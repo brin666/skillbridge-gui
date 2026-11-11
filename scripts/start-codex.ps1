@@ -2,10 +2,14 @@ param(
     [string]$DataDir = 'D:/SkillBridgeData/codex-local',
     [int]$ApiPort = 17322,
     [int]$GuiPort = 5174,
-    [switch]$Refresh
+    [switch]$Refresh,
+    [ValidateSet('codex', 'claude', 'hermes', 'pi', 'all')]
+    [string[]]$Harness = @('codex'),
+    [string]$Project = ''
 )
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
+if (!$Project) { $Project = $projectRoot }
 $profilePath = [System.IO.Path]::GetFullPath($DataDir)
 $pythonExe = (Get-Command python -ErrorAction Stop).Source
 $nodeExe = (Get-Command node -ErrorAction Stop).Source
@@ -27,9 +31,9 @@ if ($guiListener -and !(Test-ProfileService "http://127.0.0.1:$GuiPort")) {
     throw "Port $GuiPort belongs to another service or profile. No process was stopped."
 }
 if ($Refresh) {
-    & $pythonExe (Join-Path $projectRoot 'scripts/codex_inventory.py') --data-dir $profilePath --project $projectRoot
-    if ($LASTEXITCODE -eq 1) { throw 'Codex inventory failed. See the error above.' }
-    if ($LASTEXITCODE -eq 2) { Write-Warning 'Some resources were not registered. See codex-inventory.json in the profile.' }
+    & $pythonExe (Join-Path $projectRoot 'scripts/harness_inventory.py') --data-dir $profilePath --project $Project --harness @Harness
+    if ($LASTEXITCODE -ne 0 -and $LASTEXITCODE -ne 2) { throw 'Inventory failed. See the error above.' }
+    if ($LASTEXITCODE -eq 2) { Write-Warning 'Some resources were not registered. See harness-inventory.json in the profile.' }
 }
 $logDir = Join-Path $profilePath 'logs'
 New-Item -ItemType Directory -Force -Path $logDir | Out-Null

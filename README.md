@@ -8,22 +8,25 @@ SkillBridge is a local-first AI Skills visual management tool launched from an A
 
 ## 当前 GUI：资料浏览与交接包
 
+现已增加 Codex、Claude Code、Hermes、Pi 的统一资料整理入口，来源筛选沿用现有界面。运行 `python -m pip install -r scripts/requirements-inventory.txt` 后，使用 `powershell -NoProfile -File scripts/start-gui.ps1 -Refresh`。已有档案、自定义目录、覆盖范围和限制见[多 Harness 汇总说明](docs/harness-inventory.md)。
+
 当前正式界面在 `ui/src/workspace/`，使用 Astryx 组件和已确认的 cart-v2 设计。支持 Skill、规则、记忆、MCP 和账本分类浏览，中文 Skill 用途、Codex 会话名称、持久化交接包、真实文件导出、后端提示词复制以及历史和接收报告。卡片悬停、搜索展开、分类切换及加入／移出动效已接入；点击右侧栏空白处可展开交接包。
 
-Windows 本机启动需要 Python 3.11+、Node.js/npm；整理 Codex 资料还需要可用的 Codex CLI。从仓库根目录执行：
+Windows 本机启动需要 Python 3.11+、Node.js/npm；只有整理 Codex 资料时需要可用的 Codex CLI。从仓库根目录执行：
 
 ```powershell
+python -m pip install -r scripts/requirements-inventory.txt
 npm --prefix ui ci
-powershell -NoProfile -File scripts/start-codex.ps1
+powershell -NoProfile -File scripts/start-gui.ps1
 ```
 
-打开 <http://127.0.0.1:5174/>。首次启动没有资料时显示空状态；主动整理本机 Codex 资料时再执行：
+打开 <http://127.0.0.1:5175/>。首次启动没有资料时显示空状态；主动整理本机四种 Harness 的资料时再执行：
 
 ```powershell
-powershell -NoProfile -File scripts/start-codex.ps1 -Refresh
+powershell -NoProfile -File scripts/start-gui.ps1 -Refresh
 ```
 
-默认档案在 `D:/SkillBridgeData/codex-local`，可通过 `-DataDir` 指定其他绝对目录。源配置与记忆不写入仓库，运行时档案、导出包和浏览器测试证据保留在本机。npm 会按锁文件安装 Astryx，无需下载它的完整源码。
+默认档案遵循 `SKILLBRIDGE_HOME` 或 `~/.skillbridge`，可通过 `-DataDir` 沿用已有档案的绝对目录；用 `-Project` 指定要整理的项目。原 `start-codex.ps1` 入口仍保留。源配置与记忆不写入仓库，运行时档案、导出包和浏览器测试证据保留在本机。npm 会按锁文件安装 Astryx，无需下载它的完整源码。
 
 详细说明：[GUI 启动与操作](ui/README.md)、[Codex 资料接入](docs/codex-local.md)、[验证记录](ui/VALIDATION.md)。下方保留早期后端及 v0.1 dashboard 说明；当前 GUI 使用 workspace API。
 

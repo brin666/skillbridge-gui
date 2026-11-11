@@ -9,6 +9,7 @@ import { Dialog } from "@astryxdesign/core/Dialog";
 import { Tooltip } from "@astryxdesign/core/Tooltip";
 import { asError } from "./api";
 import { environmentScope, useWorkspace } from "./useWorkspace";
+import { sourceEnvironments, sourceNames } from "./provenance";
 import { useCartMotion } from "./useCartMotion";
 import { installSpringVars } from "./motion";
 import { Glyph } from "./Glyph";
@@ -118,7 +119,7 @@ export default function AppV2() {
     const map = new Map<string, Environment>();
     [
       ...model.environments,
-      ...assets.map((a) => a.environment).filter((e): e is Environment => !!e),
+      ...assets.flatMap(sourceEnvironments),
     ].forEach((e) => {
       if (e.harness || e.agent) map.set(environmentScope(e), e);
     });
@@ -189,7 +190,7 @@ export default function AppV2() {
       .filter(
         (a) =>
           a.kind === category &&
-          (source === "all" || sourceName(a) === source) &&
+          (source === "all" || sourceNames(a).includes(source)) &&
           (filter !== "frequent" || frequent.has(a.id)) &&
           (filter !== "recommended" || recommended.has(a.id)) &&
           (filter !== "selected" || selectedIds.has(a.id)) &&
@@ -199,7 +200,7 @@ export default function AppV2() {
         (category === "memory" ? Number(!!presentations.get(b.id)?.threadId) - Number(!!presentations.get(a.id)?.threadId) ||
           (presentations.get(b.id)?.date || b.updatedAt).localeCompare(presentations.get(a.id)?.date || a.updatedAt) : 0)),
     [assets, category, source, filter, frequent, recommended, selectedIds, searchIndex, query, presentations]);
-  const sources = useMemo(() => [...new Set(assets.map(sourceName))], [assets]);
+  const sources = useMemo(() => [...new Set(assets.flatMap(sourceNames))], [assets]);
   function tell(text: string, undo?: () => Promise<unknown>) {
     clearTimeout(timer.current);
     setNotice({ text, undo, key: Date.now() });

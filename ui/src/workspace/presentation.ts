@@ -1,4 +1,5 @@
 import type { Asset } from "./types";
+import { sourceNames } from "./provenance";
 
 export interface AssetPresentation {
   schemaVersion: 1;
@@ -38,7 +39,7 @@ export function displayTitle(asset: Asset) {
 export function presentationSearch(asset: Asset) {
   const p = presentationOf(asset);
   return [displayTitle(asset), asset.title, p?.originalName, p?.summary, asset.scope.path,
-    asset.source.path, asset.environment?.harness].filter(Boolean).join(" ").toLocaleLowerCase();
+    asset.source.path, ...sourceNames(asset)].filter(Boolean).join(" ").toLocaleLowerCase();
 }
 
 export function shortProject(path: string) {

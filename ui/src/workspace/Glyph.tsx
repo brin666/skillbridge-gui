@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+const hermesIcon = new URL("./assets/hermes.svg", import.meta.url).href;
 const paths: Record<string, ReactNode> = {
   layers: (
     <>
@@ -123,7 +124,7 @@ const paths: Record<string, ReactNode> = {
   star: (
     <path d="m12 3 3 6 6 1-4.5 4.5 1 6.5-5.5-3-5.5 3 1-6.5L3 10l6-1 3-6Z" />
   ),
-  // 来源（自绘示意图形，非官方标志）
+  // Approved source icons; asset provenance is documented in assets/README.md.
   codex: (
     <>
       <path d="M12 3.2 19.6 7.6v8.8L12 20.8l-7.6-4.4V7.6Z" />
@@ -131,9 +132,16 @@ const paths: Record<string, ReactNode> = {
     </>
   ),
   claude: (
-    <>
-      <path d="M12 4v16M4 12h16M6.4 6.4l11.2 11.2M17.6 6.4 6.4 17.6" />
-    </>
+    <g strokeWidth="2.1">
+      <path d="m12.3 2-.6 20M2.1 11.3l19.8 1.4M4.3 4.2l15.4 15.6M5.2 19.9 18.8 4.1M8.4 3.3l7.2 17.4M3 16.1l18-8.2M2.5 7.1l19 9.8M8.2 21.2l7.6-18.4" />
+    </g>
+  ),
+  bridge: <path d="M5 21V10a9 9 0 0 1 18 0v11M5 15h18" strokeWidth="2.6" />,
+  pi: (
+    <g fill="currentColor" stroke="none">
+      <path fillRule="evenodd" d="M165.29 165.29H517.36V400H400V517.36H282.65V634.72H165.29ZM282.65 282.65V400H400V282.65Z" />
+      <path d="M517.36 400H634.72V634.72H517.36Z" />
+    </g>
   ),
   cursor: (
     <>
@@ -150,11 +158,15 @@ export function Glyph({
   size?: number;
   stroke?: number;
 }) {
+  if (name === "hermes") {
+    return <img className="brand-hermes" src={hermesIcon} width={size + 2} height={size + 2}
+      alt="" aria-hidden="true" draggable={false} />;
+  }
   return (
     <svg
       width={size}
       height={size}
-      viewBox="0 0 24 24"
+      viewBox={name === "pi" ? "130 130 540 540" : name === "bridge" ? "0 0 28 28" : "0 0 24 24"}
       fill="none"
       stroke="currentColor"
       strokeWidth={stroke}

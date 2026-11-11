@@ -308,8 +308,32 @@ button:not(.astryx-button):disabled {
 .search [data-astryx-text-input] {
   border-radius: 999px !important;
 }
+/* Keep the focus ring on the whole capsule, including its icon and padding. */
+.search .astryx-text-input:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.search input:focus {
+  outline: none;
+}
 
 /* 来源分段控件 */
+.brand-hermes {
+  display: block;
+  mix-blend-mode: multiply;
+}
+.seg .brand-hermes {
+  opacity: 0.45;
+  transition: opacity 200ms;
+}
+.seg button.on .brand-hermes,
+.seg button:hover .brand-hermes {
+  opacity: 1;
+}
+.rm .seg .brand-hermes { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .seg .brand-hermes { transition: none; }
+}
 .seg {
   position: relative;
   display: flex;

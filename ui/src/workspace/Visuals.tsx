@@ -106,6 +106,9 @@ export function Tile({
 const harness: Record<string, string> = {
   Codex: "codex",
   "Claude Code": "claude",
+  Hermes: "hermes",
+  Pi: "pi",
+  SkillBridge: "bridge",
   Cursor: "cursor",
 };
 export function Rail({
@@ -298,10 +301,21 @@ export function SourceFilter({
             role="radio"
             aria-checked={value === o.id}
             aria-label={o.label}
+            tabIndex={value === o.id ? 0 : -1}
             className={value === o.id ? "on" : ""}
             onClick={() => onChange(o.id)}
+            onKeyDown={(event) => {
+              const next = event.key === "ArrowRight" ? (idx + 1) % opts.length
+                : event.key === "ArrowLeft" ? (idx + opts.length - 1) % opts.length
+                : event.key === "Home" ? 0 : event.key === "End" ? opts.length - 1 : null;
+              if (next === null) return;
+              event.preventDefault();
+              onChange(opts[next].id);
+              event.currentTarget.closest('[role="radiogroup"]')
+                ?.querySelectorAll<HTMLButtonElement>('button[role="radio"]')[next]?.focus();
+            }}
           >
-            <Glyph name={o.icon} size={15} stroke={1.8} />
+            <Glyph name={o.icon} size={17} stroke={1.8} />
           </button>
         </Tooltip>
       ))}

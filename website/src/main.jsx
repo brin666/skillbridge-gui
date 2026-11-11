@@ -142,7 +142,7 @@ function HeroVisual({reduced}) {
         <div className="hv-list"><b>交接包</b>{picked.map(c => <span key={c.id}><Glyph name={c.icon} size={12}/>{c.title}</span>)}</div>
       </div>
     </div>
-    <span className="hv-note">示例数据</span>
+    <span className="hv-note">Codex 示例</span>
   </div>;
 }
 
@@ -165,9 +165,9 @@ function App() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <span className="badge"><i/>已验证入口：Windows + Codex</span>
+          <span className="badge"><i/>Windows 启动实测</span>
           <h1>看清你的 Agent，<br/>都带着什么。</h1>
-          <p className="lead">让 Agent 整理 Skills、记忆、规则和 MCP，在一个本机界面中查看、选择和交接。</p>
+          <p className="lead">整理 Codex、Claude Code、Hermes、Pi 可读取的本地 Skills、记忆、规则和 MCP 配置，在一个界面中查看、选择和交接。</p>
           <CopyLaunch/>
           <div className="secondary">
             <a className="sec-btn" href="#demo"><Glyph name="play" size={15}/>体验界面</a>
@@ -193,7 +193,7 @@ function App() {
           <h2 id="demo-title">先在这里试一试</h2>
           <p className="hint-wide">切换分类、搜索、把资料加入交接包，点右侧栏空白处展开。</p>
           <p className="hint-narrow">切换分类、搜索、把资料加入交接包，点底部按钮查看。</p>
-          <span className="sample-tag big">示例数据 · 不读取你的电脑</span>
+          <span className="sample-tag big">Codex 示例数据 · 不读取你的电脑</span>
         </div>
         <div className="demo-window">
           <Demo reduced={reduced} manualReduce={manualReduce} systemReduce={systemReduce} setManualReduce={setManualReduce}/>
@@ -203,17 +203,17 @@ function App() {
       <section className="scope" id="scope" aria-labelledby="scope-title">
         <div className="sec-head"><h2 id="scope-title">说清楚能做什么</h2></div>
         <div className="who">
-          <div className="who-card"><span className="who-k">谁来执行启动</span><b>有本机文件和终端权限的 Agent</b><small>首版已验证：Windows 上的 Codex</small></div>
+          <div className="who-card"><span className="who-k">谁来执行启动</span><b>有本机文件和终端权限的 Agent</b><small>启动实测环境：Windows；其他系统请先核对文档</small></div>
           <span className="who-arrow" aria-hidden="true"><Glyph name="arrow" size={20}/></span>
-          <div className="who-card"><span className="who-k">整理谁的资料</span><b>本机 Codex</b><small>Skills · 记忆 · 规则 · MCP 配置</small></div>
+          <div className="who-card"><span className="who-k">整理谁的资料</span><b>本机 Codex · Claude Code · Hermes · Pi</b><small>可读取的 Skills · 记忆 · 规则 · MCP 配置</small></div>
         </div>
         <div className="scope-cols">
           <div className="col yes">
             <h3>现在能做</h3>
             <ul>
-              <li>按项目文档在 Windows 上启动本机界面</li>
-              <li>整理本机 Codex 的 Skills、记忆、规则和 MCP 配置，保留来源</li>
-              <li>Skill 显示中文用途和原名，记忆显示会话名称</li>
+              <li>按项目文档在 Windows 上启动本机界面；其他系统不承诺自动适配。项目范围按当前或明确指定的已有项目整理，不扫描全盘项目</li>
+              <li>整理本机 Codex、Claude Code、Hermes、Pi 可读取的本地资料并保留来源；Codex 需要 Codex CLI，其他来源无需对应 CLI</li>
+              <li>Codex Skill 显示中文用途和原名；记忆名称按各来源可读信息显示</li>
               <li>整理账本列出读取、解析和登记失败的项目</li>
               <li>选择资料，生成含真实文件、清单和提示词的交接包</li>
             </ul>
@@ -222,7 +222,7 @@ function App() {
             <h3>不会做，或还没做</h3>
             <ul>
               <li>不执行 Skill，不启动或测试 MCP；配置被发现不代表能连接</li>
-              <li>还不能自动整理 Claude、Cursor 等其他 Agent 的记忆、规则和 MCP</li>
+              <li>Pi 扩展记忆、插件和受管或云端资料不完全自动发现；未知来源可手工登记</li>
               <li>没有健康分、使用频率或兼容性评分</li>
               <li>交接包生成后，不代表接收方已读取、安装或调用成功</li>
               <li>不上传资料，没有账号、注册或云端同步</li>
