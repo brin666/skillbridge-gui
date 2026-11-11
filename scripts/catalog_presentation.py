@@ -23,6 +23,45 @@ def description_hash(name, description):
     return hashlib.sha256((name + "\n" + description).encode()).hexdigest()
 
 
+def load_skill_translation_cache(profile_home):
+    """Read profile-local, description-bound labels without network calls."""
+    path = Path(profile_home) / "skill-translations.zh-CN.json"
+    if not path.exists():
+        return {}
+    value = json.loads(path.read_text(encoding="utf-8-sig"))
+    if not isinstance(value, dict) or value.get("schemaVersion") != 1 or not isinstance(value.get("items"), dict):
+        raise ValueError("TRANSLATION_CACHE_INVALID")
+    items = value["items"]
+    for fingerprint, label in items.items():
+        if not re.fullmatch(r"[0-9a-f]{64}", fingerprint) or not isinstance(label, dict):
+            raise ValueError("TRANSLATION_CACHE_INVALID")
+        for field, limit in (("titleZh", 500), ("summaryZh", 4000)):
+            text = label.get(field)
+            if not isinstance(text, str) or not text.strip() or len(text) > limit:
+                raise ValueError("TRANSLATION_CACHE_INVALID")
+    return items
+
+
+def apply_cached_skill_translation(body, cache):
+    """Reuse a translation only for the same original name and description."""
+    if body.get("kind") != "skill":
+        return body
+    environment = body.get("environment") or {}
+    presentation = environment.get("presentation")
+    if not isinstance(presentation, dict):
+        return body
+    name, description = presentation.get("originalName"), presentation.get("originalDescription")
+    if not isinstance(name, str) or not isinstance(description, str):
+        return body
+    label = cache.get(description_hash(name, description))
+    if label is None:
+        return body
+    return {**body, "environment": {**environment, "presentation": {
+        **presentation, "title": label["titleZh"], "summary": label["summaryZh"],
+        "titleSource": "中文释义", "translation": "中文简介",
+    }}}
+
+
 def memory_metadata(path):
     with path.open(encoding="utf-8-sig") as stream:
         text = stream.read(16384)

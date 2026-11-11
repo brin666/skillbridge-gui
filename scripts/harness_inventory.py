@@ -39,6 +39,7 @@ ERROR_MESSAGES = {
     "FILE_TOO_LARGE": "目录中的单个文件超过后端 32 MiB 限制，本次未登记；源文件未修改。",
     "SENSITIVE_CONTENT": "后端发现疑似敏感内容，本次未登记；源文件未修改。",
     "HARNESS_DISCOVERY_FAILED": "该应用整理失败，其他来源继续处理；请检查目录和 CLI。",
+    "TRANSLATION_CACHE_INVALID": "本地中文简介缓存无法读取，请检查 skill-translations.zh-CN.json 后重试。",
 }
 
 

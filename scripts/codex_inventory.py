@@ -25,7 +25,7 @@ sys.path.insert(0, str(ROOT))
 from backend.workspace.errors import WorkspaceError
 from backend.workspace.router import dispatch
 from backend.workspace.service import Workspace
-from scripts.catalog_presentation import enrich_requests
+from scripts.catalog_presentation import enrich_requests, load_skill_translation_cache, apply_cached_skill_translation
 from scripts.inventory_common import merge_environment, source_identity
 
 
@@ -239,8 +239,14 @@ def register(workspace, requests):
     existing = dispatch(workspace, "GET", "/api/v1/assets?includeSystem=true&includeArchived=true")[1]["items"]
     indexed = {source_identity(a): a for a in existing}
     registered, errors = [], []
+    try:
+        translations = load_skill_translation_cache(workspace.home)
+    except (OSError, ValueError, UnicodeError):
+        translations = {}
+        errors.append({"kind": "skill", "path": str(workspace.home / "skill-translations.zh-CN.json"),
+                       "code": "TRANSLATION_CACHE_INVALID"})
     for body in requests:
-        body = dict(body)
+        body = apply_cached_skill_translation(dict(body), translations)
         requested_harness = (body.get("environment") or {}).get("harness")
         previous = indexed.get(source_identity(body))
         if previous and previous.get("ownership") == "system":

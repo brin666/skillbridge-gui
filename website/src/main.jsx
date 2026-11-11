@@ -166,8 +166,8 @@ function App() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <span className="badge"><i/>Windows 启动实测</span>
-          <h1>看清你的 Agent，<br/>都带着什么。</h1>
-          <p className="lead">整理 Codex、Claude Code、Hermes、Pi 可读取的本地 Skills、记忆、规则和 MCP 配置，在一个界面中查看、选择和交接。</p>
+          <h1>Skills、记忆、MCP<br/>带到其他 Agent。</h1>
+          <p className="lead">整理 Codex、Claude Code、Hermes、Pi 的本地资料，生成包含文件和提示词的交接包，让下一个 Agent 接着用。</p>
           <CopyLaunch/>
           <div className="secondary">
             <a className="sec-btn" href="#demo"><Glyph name="play" size={15}/>体验界面</a>
@@ -212,8 +212,8 @@ function App() {
             <h3>现在能做</h3>
             <ul>
               <li>按项目文档在 Windows 上启动本机界面；其他系统不承诺自动适配。项目范围按当前或明确指定的已有项目整理，不扫描全盘项目</li>
-              <li>整理本机 Codex、Claude Code、Hermes、Pi 可读取的本地资料并保留来源；Codex 需要 Codex CLI，其他来源无需对应 CLI</li>
-              <li>Codex Skill 显示中文用途和原名；记忆名称按各来源可读信息显示</li>
+              <li>整理本机 Codex、Claude Code、Hermes、Pi 可读取的本地资料并保留来源</li>
+              <li>Skill 显示中文用途和原名</li>
               <li>整理账本列出读取、解析和登记失败的项目</li>
               <li>选择资料，生成含真实文件、清单和提示词的交接包</li>
             </ul>
